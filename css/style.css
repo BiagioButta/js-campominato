@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+    --bb-white: white;
+    --bb-black: black;
+    --bb-green: green;
+    --bb-red: red;
+
+    --bb-grey: #808080;
+    --bb-grey-100: #F8F9FA;
+    --bb-grey-200: #E9ECEF;
+    --bb-grey-300: #DEE2E6;
+    --bb-grey-400: #CED4DA;
+    --bb-grey-500: #ADB5BD;
+    --bb-grey-600: #6C757D;
+    --bb-grey-700: #495057;
+    --bb-grey-800: #343A40;
+    --bb-grey-900: #212529;
+
+}
+
+.wrapper {
+    height: 60px;
+    background-color:var(--bb-grey-700);
+}
+
+
+
+body{
+    background-color: var(--bb-grey-200);
+    /* height: 100vh; */
+}
+
+header {
+    height: inherit;
+    padding: 10px 0;
+}
+
+main {
+    height: calc(100vh - 100px);
+    margin-top: 60px;
+    overflow-y: auto;
+}
+
+footer {
+    height: 40px;
+    background-color: var(--bb-grey-700);
+}
+
+.game-camp {
+    width: 500px;
+    height: 500px;
+}
+
+.game-over {
+    width: 250px;
+    height: 150px;
+    border: 3px solid black;
+    background-color: var(--bb-grey-600);
+    position: absolute;
+    top: calc(50% - 75px);
+    left: calc(50% - 125px);
+    z-index: 9999;
+}
+
+.cell {
+    width: calc(500px / 10);
+    height: calc(500px / 10);
+    border: 1px solid black;
+    box-shadow: 1px 1px 0px #999,
+                2px 2px 0px #999,
+                3px 3px 0px #999,
+                4px 4px 0px #999,
+                5px 5px 0px #999,
+                6px 6px 0px #999;
+}
+
+.box-shadow{
+    box-shadow: 1px 1px 0px var(--bb-grey-600),
+                2px 2px 0px var(--bb-grey-600),
+                3px 3px 0px var(--bb-grey-600),
+                4px 4px 0px var(--bb-grey-600),
+                5px 5px 0px var(--bb-grey-600),
+                6px 6px 0px var(--bb-grey-600);
+}
+
+
+
+.bg-red{
+    background-color: var(--bb-red);
+}
+
+.inverse-shadow{
+    box-shadow: -1px -1px -0px var(--bb-grey-700) inset,
+                -2px -2px -0px var(--bb-grey-700) inset,
+                -3px -3px -0px var(--bb-grey-700) inset,
+                -4px -4px -0px var(--bb-grey-700) inset,
+                -5px -5px -0px var(--bb-grey-700) inset,
+                -6px -6px -0px var(--bb-grey-700) inset;
+}
+
+.bg-grey-600{
+    background-color: var(--bb-grey-600)
+}
